@@ -14,7 +14,7 @@ describe('Delete User', () => {
          }
         }).then(response =>{
           console.log(response)
-          if(response.status === 200 && response.statusText === "ok"){
+          if(response.status === 200 && response.statusText === "OK"){
              expect(response.body.message).to.eq('Nenhum registro excluído')
           }else{
              console.log(response.status)
